@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".ui.login.ContactListActivity">
+
+
+    <Button
+        android:id="@+id/buttonAddContact"
+        android:layout_width="71dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="264dp"
+        android:layout_marginEnd="24dp"
+        android:onClick="Add"
+        android:text="Add"
+        app:layout_constraintEnd_toStartOf="@+id/buttonDelete"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewContacts"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="90dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="264dp"
+        android:onClick="delete"
+        android:text="Delete"
+        app:layout_constraintStart_toEndOf="@+id/buttonAddContact"
+
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewContacts"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewContacts"
+        android:layout_width="370dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/buttonAddContact"
+        app:layout_constraintTop_toBottomOf="@+id/settingsButton"
+        tools:ignore="MissingConstraints"
+
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/buttonEditContact"
+        android:layout_width="73dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="264dp"
+        android:onClick="Edit"
+        android:text="Edit"
+        app:layout_constraintStart_toEndOf="@+id/buttonDelete"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewContacts"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/viewDetailsButton"
+        android:layout_width="86dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="264dp"
+        android:onClick="viewDetailButton"
+        android:text="more"
+        app:layout_constraintStart_toEndOf="@+id/buttonEditContact"
+        app:layout_constraintTop_toBottomOf="@+id/recyclerViewContacts"
+        tools:ignore="MissingConstraints" />
+
+
+    <Button
+        android:id="@+id/settingsButton"
+        android:layout_width="57dp"
+        android:layout_height="51dp"
+        android:drawableLeft="@drawable/ic_menu"
+        android:onClick="openSettingsActivity"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="326dp"
+        tools:layout_editor_absoluteY="7dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
