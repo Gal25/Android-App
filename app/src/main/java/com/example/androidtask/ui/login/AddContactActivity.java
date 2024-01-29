@@ -14,8 +14,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.androidtask.Data.ContactRepository;
 import com.example.androidtask.Data.UserRepository;
-import com.example.androidtask.Network_Retrofit.GenderResponse;
-import com.example.androidtask.Network_Retrofit.GenderizeService;
 import com.example.androidtask.R;
 import com.example.androidtask.UserEntity.Contact;
 
