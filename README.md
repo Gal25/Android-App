@@ -12,6 +12,7 @@ An application that provides for each user the contact list that is managed by h
 - ***The user will be able to see the full details of the contact he chooses***
 
 -The application is written in JAVA language
+
 -Room database and AsyncTask are used
 
 
